@@ -1,0 +1,20 @@
+<p-carousel [value]="images" [responsiveOptions]="responsiveOptions" 
+[numVisible]="3" [numScroll]="1">
+    <ng-template let-image pTemplate="item">
+       
+        <div class="testmonial-block">
+            <div class="testmonial-head">
+            <img alt="" [src]="image.url" />
+
+            <h4>{{image.name}}</h4>
+            <span>{{image.position}}</span>
+        
+            </div>
+
+            <div class="text-testmonial">
+                   {{image.text}}
+
+            </div>
+        </div>
+    </ng-template>
+  </p-carousel>
